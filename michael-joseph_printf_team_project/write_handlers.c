@@ -39,9 +39,8 @@ int handle_write_char(char c, char buffer[],
 		else
 			return (write(1, &buffer[BUFF_SIZE - i - 1], width - 1) +
 					write(1, &buffer[0], 1));
-	}
-	
-	return (write(1, &buffer[0], 1));
+}	
+return (write(1, &buffer[0], 1));
 }
 
 /************************* WRITE NUMBER *************************/
@@ -163,7 +162,7 @@ int write_unsgnd(int is_negative, int ind,
 	if (precision == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0')
 		return (0); /* printf(".0d", 0) no char is printed */
 	
-	if (precision > 0 && precision < length)
+if (precision > 0 && precision < length)
 		padd = ' ';
 
 	while (precision > length)
