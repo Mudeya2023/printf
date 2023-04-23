@@ -26,9 +26,14 @@ int get_width(const char *format, int *i, va_list list)
 			width = va_arg(list, int);
 			break;
 		}
+<<<<<<< HEAD
 else 
 break;}	
+=======
+		else
+			break;
+	}
+>>>>>>> f60bfb3c587f5d5e517d8ba3ec00a567d7aaa12a
 	*i = curr_i - 1;
-
-return (width);
+	return (width);
 }
