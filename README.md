@@ -16,7 +16,6 @@ Each conversion specification is introduced by the character % and ends with a c
 /* * This Header is optional and allows you to compare the * custom _printf() function to the standard library one. */ #include <stdio.h> ` #include <limits.h> #include <stdio.h> #include "main.h"
 
 /**
-
 main - Entry point
 
 Return: Always 0 */ int main(void) { int len; int len2; unsigned int ui; void *addr;
